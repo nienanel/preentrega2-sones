@@ -1,5 +1,4 @@
 ///creacion de objetos con constructor y class "exoplanetas"
-
 const exo1 = new exoPlanetas("Trappist", 0.41, 41, 14.85, "candidato", 6.1);
 const exo2 = new exoPlanetas("ProximaCentaurib", 1.27, 4.2, -46.7, "Psicroplaneta", 11.2);
 const exo3 = new exoPlanetas("Kepler442b", 2.36, 1115, -38.5, "Psicroplaneta", 112);
@@ -14,8 +13,7 @@ const exo9 = new exoPlanetas("tierra", 1, 0, 14, "mesoplaneta", 365)
 const planetas = [exo1, exo2, exo3, exo4, exo5, exo6, exo7, exo8, exo9]
 console.log(planetas)
 
-/// funcion para mostrar lista de planetas y navegar entre distintos objetos del array
-
+/// funcion para mostrar lista de planetas y navegar entre distintos objetos del array.
 function mostrarDatosPlaneta(planeta) {
     const mensaje = "nombre: " + planeta.nombre + "\n" +
         "masa: " + planeta.masa + "\n" +
@@ -52,11 +50,9 @@ const planetasCandidatos = planetas.filter(planeta => planeta.hClase === "candid
 console.log(planetasCandidatos)
 
 /// ordeno los planetas de menos a mas masa
-
 console.table(planetas.sort((a, b) => a.masa - b.masa));
 
 /// funcion para separar en dos array nuevos los exoplanetas segund su distancia de la tierra en UA
-
 function distanciasUa() {
     let noTanLejos = []
     let lejisimos = []
